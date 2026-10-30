@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1
+
+- Use full forms instead of contractions in final prose by default. Preserve exact quotations and other text that must stay verbatim. Update the README and rewrite examples to match.
+
 ## 3.1.0
 
 - Added pattern #26 and section F for replies that re-explain context the reader already has (#269). It acts on replies, not standalone writing. 26 patterns total.
