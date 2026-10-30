@@ -11,9 +11,9 @@ Humanizer makes AI-written text sound like a person wrote it, without changing w
 > I'm thrilled to announce that shared drafts are finally here! 🚀 For months, our own team was drowning in files named final_v7.docx — and we knew there had to be a better way. Now two people can edit the same doc at once, with every change appearing live for both of them. It's not just a feature; it's a whole new way to collaborate. Comments stay anchored to the exact sentence they reference, even as the text around them evolves. And the best part? It's available today on every plan, completely free. Let that sink in.
 
 **After:**
-> Shared drafts are out today. For months our own team passed around files named final_v7.docx, so we built a way for two people to edit the same doc at once, with each person's changes showing up live for the other. Comments stay pinned to the sentence they're about, even when the text around them changes. It's free on every plan.
+> Shared drafts are out today. For months our own team passed around files named final_v7.docx, so we built a way for two people to edit the same doc at once, with each person's changes showing up live for the other. Comments stay pinned to the sentence they refer to, even when the text around them changes. The feature is free on every plan.
 
-In a blind test, judges preferred Humanizer's rewrite over the original AI text 16 times out of 16 ([#229](https://github.com/blader/humanizer/issues/229)).
+The original project reports that judges preferred its rewrite over the AI text 16 times out of 16 in a blind test ([#229](https://github.com/blader/humanizer/issues/229)). This fork's full-form rule was not part of that test.
 
 Humanizer edits for human readers. Getting past AI detectors is not a goal, and detectors still flag most of its output.
 
@@ -97,6 +97,8 @@ Now humanize this text:
 ```
 
 Humanizer follows the sample's rhythm, word choice, punctuation, and deliberate quirks, including dashes if you use them.
+
+This fork uses full forms instead of contractions in final prose. For example, it writes "I am," "it is," "do not," and "I have." A writing sample does not change this default unless you ask for contractions. Quotations and other text that must stay exact are preserved.
 
 ## How it works
 
@@ -191,7 +193,7 @@ The patterns are numbered by strength and frequency. The first five justify an e
 >
 > The part of Lisbon I liked best starts a block or two above the main squares, where the streets go quiet and nobody is in a hurry. São Jorge Castle has good views over the rooftops and a long queue to get them.
 >
-> I'd go back, in spring next time, and with better shoes.
+> I would go back, in spring next time, and with better shoes.
 
 ## Sources
 
